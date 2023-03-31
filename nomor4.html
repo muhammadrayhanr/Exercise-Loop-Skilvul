@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jawaban Nomor 4 LOOP</title>
+  </head>
+  <body>
+    <script>
+      let count = 0;
+
+      function showConfirm() {
+        let result = confirm('Apakah Anda mau mengulang?');
+        if (result == true) {
+          count++;
+          showConfirm();
+        } else {
+          alert('Perulangan sudah dilakukan sebanyak ' + count + ' kali.');
+        }
+      }
+
+      showConfirm();
+    </script>
+  </body>
+</html>

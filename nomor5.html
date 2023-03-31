@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jawaban Nomor 5 LOOP</title>
+  </head>
+  <body>
+    <script>
+      let answer = 'Impact Byte';
+
+      function quiz() {
+        let userAnswer = prompt('Sebutkan kepanjangan dari nama IB');
+        if (userAnswer == answer) {
+          alert('Selamat! Jawaban kamu benar!');
+        } else {
+          quiz();
+        }
+      }
+
+      quiz();
+    </script>
+  </body>
+</html>
